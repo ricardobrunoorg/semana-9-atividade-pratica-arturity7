@@ -5,14 +5,19 @@ Nesta atividade, vamos montar um programa para praticar funções em JavaScript 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Arthur Gabriel de Oliveira Fonseca Santos
+- Matricula: 924860
 
 ## Prints do trabalho
 
-<<  COLOQUE A IMAGEM - TELA DE CARDS DE PRODUTOS - AQUI >>
+### Tela de Cards de Produtos
 
-<<  COLOQUE A IMAGEM - TELA DE DETALHE DO PRODUTO - AQUI >>
+![Imagem da tela de cards](/public/1.png)
 
-<<  COLOQUE A IMAGEM - TELA DO CONSOLE - AQUI >>
+### Tela de Detalhe do Produto
 
+![Tela de Detalhe](/public/2.png)
+
+### Console do Navegador (querySelectorAll — listagem de data-id)
+
+![Tela do console](/public/3.png)

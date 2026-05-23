@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">BYTE<em>shop</em></span>
+      </div>
+      <p class="header-tagline">Tecnologia que transforma</p>
+    </div>
+  </header>
+
+  <!-- ── CONTROLES ── -->
+  <section class="controls-bar">
+    <div class="controls-inner">
+
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input id="search" type="text" placeholder="Buscar produto…" autocomplete="off" />
+      </div>
+
+      <div class="select-wrap">
+        <select id="category">
+          <option value="Todas">Todas as categorias</option>
+        </select>
+        <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+
+      <button id="btnRender" class="btn-render">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <polyline points="23 4 23 10 17 10"/>
+          <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+        </svg>
+        Renderizar
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ── CONTADOR ── -->
+  <div class="result-bar">
+    <span id="result-count" class="result-count"></span>
+  </div>
+
+  <!-- ── LISTA DE PRODUTOS ── -->
+  <main>
+    <div id="product-list" class="product-list"></div>
+  </main>
+
+  <!-- ── DETALHES DO PRODUTO ── -->
+  <div id="product-details" class="product-details hidden"></div>
+
+  <!-- ── OVERLAY ── -->
+  <div id="overlay" class="overlay hidden"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
